@@ -159,7 +159,7 @@ def create_unet(size=16, use_skip_connections=True, grayscale_inputs=True):
 
     #if grayscale_inputs: input = Input((96,96,1))
     #else:                input = Input((96,96,3))
-    input = Input((16, 16, 7))
+    input = Input((16, 16, 8))
 
     # Encoder
     block1 = create_block(input, 64)
